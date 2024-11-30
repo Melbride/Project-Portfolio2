@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css" >
+    <script src="https://kit.fontawesome.com/f9764a5378.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+      <nav>
+        <!-- <img src="images/logo.png" class="logo"> -->
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Experience</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <img src="images/melby.jpeg" id="menu-image" alt="Description of Image">
+
+      <div class="header-text">
+        <p class="intro-text">Hi, I'm</p>
+        <h1 class="name">Brigit Melbride</h1>
+        <p class="title">Data Scientist  &amp;  Back-end Developer</p>
+
+
+      </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/melby6.jpeg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm a passionate Data Analyst, Data Scientist, and Web Developer with 2 years of experience. I specialize in 
+            Machine Learning and Data Analysis, using advanced algorithms and techniques to extract insights from data and build predictive 
+            models.</p>
+            <br>
+          <p>My expertise includes working with tools like Python, SQL, Pandas, and Power BI to analyze large datasets and derive meaningful 
+            insights. I also have experience in deploying end-to-end machine learning models using scikit-learn and creating interactive 
+            web applications with Django.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Data Science & Machine Learning</span><br>Python, scikit-learn, pandas, numpy</li>
+              <li><span>Web Development</span><br>Django, HTML, CSS, JavaScript</li>
+              <li><span>Data Visualization(Power BI, matplotlib)</span><br>Creating insightful and actionable visuals</li>
+              <li><span>Data Analysis(SQL, Power BI, pandas)</span><br>Focused on data cleaning, exploration, and insights</li>
+              <!-- <li><span>Data Visualization (Power BI)</span><br>Creating models</li> -->
+
+
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>Two years of experience specializing in Machine Learning, Web Development, and Data Analysis.</li>
+              <br>
+              <li>During this time, I have built and deployed machine learning models, developed dynamic web applications, 
+                and analyzed complex datasets to derive actionable insights. My experience has given me a strong foundation in problem-solving 
+                and delivering impactful, real-world solutions.</li>
+
+              <!-- <li><span>Data Visualization (Power BI)</span><br>Creating models</li> -->
+
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+                  <li><span>Data Science</span><br>Currently an Undergraduate Student at Meru University of Science and Technology (Third Year)</li>
+                  <li><span>Self-Taught</span><br>Learning programming, machine learning, web development, and data analysis through various online platforms</li>
+    
+                  <li><span>Certifications</span><br>
+                    <b class="cert-name">Simplilearn: </b> Data Science Expert with Python & Django<br>
+                    <b class="cert-name">Kaggle: </b> Intro to Programming, Intro to Machine Learning, Pandas<br>
+                    <b class="cert-name">Microsoft Learn: </b> Azure Responsible AI Workshop, Fundamentals of Generative AI, Azure AI Services, Power BI Capabilities
+                  </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!-- services -->
+
+<div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>I build and manage web applications using Django, focusing on robust functionality.</p>
+          <!-- <a href="#">Learn more</a> -->
+        </div>
+        <div>
+          <i class="fa-solid fa-head-side-gear"></i>
+          <h2>Machine Learning</h2>
+          <p>I develop and deploy machine learning models to solve complex problems and extract valuable insights from data.</p>
+          <!-- <a href="#">Learn more</a> -->
+        </div>
+        <div>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <h2>Data Analysis</h2>
+            <p>I analyze data using Power BI and SQL to uncover insights, visualize trends, and support data-driven decisions.</p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/crisis2.jpg">
+          <div class="layer">
+            <h3>Community Crisis Management Platform</h3>
+            <p>Enables users to post emergency alerts, 
+              request resources, and engage in community discussions.</p>
+              <a href="https://github.com/Melbride/Community_Crisis_Management"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/jumia.jpg">
+          <div class="layer">
+            <h3>Jumia Price Scraper</h3>
+            <p>Created a web scraper to track product pricing on Jumia, allowing users to visualize historical data trends.</p>
+              <a href="https://github.com/Melbride/Web-Scraping"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/churn2.jpg">
+          <div class="layer">
+            <h3>Customer Churn Prediction</h3>
+            <p>Implemented a machine learning model to predict customer churn, focusing on enhancing predictive accuracy 
+              through feature engineering.</p>
+              <a href="https://deploy-6myk3saaabd7p9tgag5fw8.streamlit.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/movie.jpg">
+          <div class="layer">
+            <h3>Movie Analysis Dashboard</h3>
+            <p>Developed an interactive Power BI dashboard for analyzing movie data, <br>providing insights into trends and audience ratings.</p>
+              <a href="https://app.powerbi.com/groups/me/reports/921d64c8-e73c-44be-8fe5-815408c7e799/25186f67343c2c5cc0d4?experience=power-bi"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/financial.jpg">
+          <div class="layer">
+            <h3>Financial Inclusion Prediction Challenge</h3>
+            <p>Participated in the Financial Inclusion Challenge on Zindi, working to predict bank account ownership among 
+              individuals based on demographic features</p>
+              <a href="https://github.com/Melbride/Financial_Inclusion"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+
+<!-- contact -->
+
+<div id="contact">
+    <div class="container">
+     <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>melbrideb@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>0790117305</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/brigit-melbride-43b8232b7/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://x.com/b_melbride"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://github.com/Melbride"><i class="fa-brands fa-github"></i></a>
+          <a href="https://wa.me/+254790117305" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+
+        </div>
+        <a href="images/My Resume.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+
+
+     </div> 
+    </div>
+    <div class="copyright">
+      <p>© 2024 Brigit Melbride. All Rights Reserved. </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+  // Select tab links and tab contents separately
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    // Remove the active class from all tab links and contents
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");   
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px"
+  }
+</script>
+
+</body>
+</html> 
+
+
+
+
+
+
