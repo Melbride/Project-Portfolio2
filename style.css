@@ -38,6 +38,7 @@ body {
   height: 300px;
   margin-bottom: 20px;
   margin-top: 50px;
+  object-fit: object-cover;
 
 }
 /* 
